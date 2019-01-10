@@ -6,13 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/index.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <input multiple type="file" id="file" accept="image/*" capture>
-    <img src="" alt="" id="imagen">
+    <div class="container">
+        <h1>Saca una foto</h1>
+        <form action="" method="post">
+
+            <div id="foto">
+                <label id="labelFoto">
+                </label>
+                <input multiple type="file" id="file" accept="image/*" capture>
+            </div>
+            <input class="ocultar" type="text" name="nombre" id="">
+            <input class="ocultar" type="email" name="" id="">
+            <input class="ocultar" type="submit" value="Enviar">
+
+        </form>
+
+        <img src="" alt="" id="imagen" height="300px" width="300px">
+    </div>
 </body>
 
 </html>
